@@ -2,15 +2,17 @@
 
 ## 1. Описание схемы подразделения
 
-Пусть $s\in\mathbf{N}$ и $\mathbf{Z}^s$ -- целочисленная решетка. Схема подразделения определяется заданной последовательностью $a=\{a_{\alpha\in\mathbf{Z}^s}$ . Оператор $\mathrm{S}$ действует на последовательности по формуле: 
+Пусть $s\in\mathbf{N}$ и $\mathbf{Z}^s$ -- целочисленная решетка. Схема подразделения определяется заданной последовательностью $a=\a_{\alpha\in\mathbf{Z}^s}$ . Оператор $\mathrm{S}$ действует на последовательности по формуле: 
 
-$$ (\mathrm{S}\lambda)_{\alpha}=\sum\limits_{\beta\in\mathbf{Z}^s} a_{\alpha-2\beta}\lambda_{\beta},~\lambda\in l_{\infty}(\mathbf{Z}^s) $$
+$$ 
+(\mathrm{S}\lambda)_{\alpha}=\sum\limits_{\beta\in\mathbf{Z}^s} a_{\alpha-2\beta}\lambda_{\beta},~\lambda\in l_{\infty}(\mathbf{Z}^s) 
+$$
 
 **Определение 1.** Схема подразделения $\lambda^m=\mathrm{S}\lambda^{m-1}$ сходится для $\lambda\in l_{\infty}(\mathbf{Z}^s)$, если существует непрерывная функция $f_{\lambda}$, такая что $\lim\limits_{m\to +\infty}\left\| f_{\lambda}\left(\frac{\cdot}{2^m}\right)-\lambda^m\right\|_{\infty} = 0$.
 
 ## 2. Поиск краев на изображении
 
-**Определение 2.** Вейвлетом называется функция $\psi \in \mathrm{L}_{1} ({\bf R}^2)\cap\mathrm{L}_{2} ({\bf R}^2)$, удовлетворяющая условию $\int\limits_{\mathbf{R}^2}\psi (\mathrm{x})d\mathrm{x} =0$.
+**Определение 2.** Вейвлетом называется функция $\psi\in\mathrm{L}_{1} ({\bf R}^2)\cap\mathrm{L}_{2} ({\bf R}^2)$, удовлетворяющая условию $\int\limits_{\mathbf{R}^2}\psi (\mathrm{x})d\mathrm{x} =0$.
 
 **Определение 3.** Для функции $f(x,y)$ вейвлет-преобразование определено равенством:
 
@@ -28,7 +30,7 @@ $$
 
 1. Находим точки, для которых $|\nabla W_{s_j}f(x,y)|\geqslant T$, где $T$ - порог.
 
-2. Среди найденных точек оставляем те, которые удовлетворяют условию $\frac{1}{R}\leqslant \frac{|\nabла W_{s_j} f(x,y)|}{|\nabла W_{s_l} f(x,y)|}\leqslant R$ для всех $j$ и $l$.
+2. Среди найденных точек оставляем те, которые удовлетворяют условию $\frac{1}{R}\leqslant \frac{|\nabla W_{s_j} f(x,y)|}{|\nabla W_{s_l} f(x,y)|}\leqslant R$ для всех $j$ и $l$.
 
 ## Основные шаги алгоритма EdgeDetect.ipynb
 
