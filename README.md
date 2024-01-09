@@ -2,9 +2,9 @@
 
 ## 1. Описание схемы подразделения
 
-Пусть $s\in\mathbf{N}$ и $\mathbf{Z}^s$ -- целочисленная решетка. Схема подразделения определяется заданной последовательностью $a=\{a_{\alpha}\}_{\alpha\in\mathbf{Z}^s}$ . Оператор $\mathrm{S}$ действует на последовательности по формуле: 
+Пусть $s\in\mathbf{N}$ и $\mathbf{Z}^s$ -- целочисленная решетка. Схема подразделения определяется заданной последовательностью $a=\{a_{\alpha\in\mathbf{Z}^s}$ . Оператор $\mathrm{S}$ действует на последовательности по формуле: 
 
-$(\mathrm{S}\lambda)_{\alpha}=\sum\limits_{\beta\in\mathbf{Z}^s} a_{\alpha-2\beta}\lambda_{\beta},~\lambda\in l_{\infty}(\mathbf{Z}^s)$
+$$ (\mathrm{S}\lambda)_{\alpha}=\sum\limits_{\beta\in\mathbf{Z}^s} a_{\alpha-2\beta}\lambda_{\beta},~\lambda\in l_{\infty}(\mathbf{Z}^s) $$
 
 **Определение 1.** Схема подразделения $\lambda^m=\mathrm{S}\lambda^{m-1}$ сходится для $\lambda\in l_{\infty}(\mathbf{Z}^s)$, если существует непрерывная функция $f_{\lambda}$, такая что $\lim\limits_{m\to +\infty}\left\| f_{\lambda}\left(\frac{\cdot}{2^m}\right)-\lambda^m\right\|_{\infty} = 0$.
 
